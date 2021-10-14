@@ -1,0 +1,13 @@
+.figures-main-container{
+  margin-left: 10rem;
+}
+.figures-main-container .figures-grid{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+}
+.square-operations{
+  margin-bottom: 5rem;
+}
+.rectangle-operations{
+  margin-bottom: 17rem;
+}

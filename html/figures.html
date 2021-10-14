@@ -11,91 +11,97 @@
   <link rel="stylesheet" href="../css/normalize.css">
   <link rel="stylesheet" href="../css/generalStyles.css">
   <link rel="stylesheet" href="../css/figures.css">
+  <link rel="stylesheet" href="../css/generalStyles-media.css" media="(min-width: 1024px)">
   <link rel="stylesheet" href="../css/figures-media.css" media="(min-width: 1024px)">
 </head>
 <body>
-  <header>
-    <a href="../index.html"><img src="../img/js-challenge-logo.png" alt="Imagen de logo de JavaScript" class="header-img"></a>
-    <a href="https://github.com/FrankzAlarcon" class="my-profile underlined">@FrankzAlarcon</a>
-  </header>
-  <main class="figures-main-container">
-    <h1 class="figures-container__tittle">Figuras Geométricas</h1>
-    <section class="figures-section">
-      <picture class="figure-section__image-container">
-        <img src="../img/triangulo-1-1334014719.png" alt="Imagen de un triangulo y sus partes" class="figure-section__image">
-      </picture>
-      <h2 class="calculator-tittle">Triángulos</h2>
-      <div class="calculator-inputs">
-        <label for="triangle-side-a">
-          <p>Ingrese el valor del <span class="bold">Lado A</span>  en cm:</p>        
-          <input type="number" placeholder="Ingrese un número" id="triangle-side-a">
-        </label>
-        <label for="triangle-side-b">
-          <p>Ingrese el valor del <span class="bold">Lado B</span> en cm:</p>        
-          <input type="number" placeholder="Ingrese un número" id="triangle-side-b">
-        </label>
-        <label for="triangle-base">
-          <p>Ingrese el valor de <span class="bold">Base</span> en cm:</p>        
-          <input type="number" placeholder="Ingrese un número" id="triangle-base">
-        </label>
-        <label for="triangle-height">
-          <p>Ingrese el valor de <span class="bold">Altura</span> en cm:</p>        
-          <input type="number" placeholder="Ingrese un número" id="triangle-height">
-        </label>
-        <button>Calcular el perimetro</button>
-        <button>Calcular el área</button>
+  <div class="container">
+    <a href="../index.html" class="return-home__button"><span>Home</span></a>
+    <header>
+      <a href="../index.html"><img src="../img/js-challenge-logo.png" alt="Imagen de logo de JavaScript" class="header-img"></a>
+      <a href="https://github.com/FrankzAlarcon" class="my-profile underlined">@FrankzAlarcon</a>
+    </header>
+    <main class="figures-main-container">
+      <h1 class="figures-container__tittle">Figuras Geométricas</h1>
+      <div class="figures-grid">
+        <section class="figures-section">
+          <picture class="figure-section__image-container">
+            <img src="../img/triangulo-1-1334014719.png" alt="Imagen de un triangulo y sus partes" class="figure-section__image">
+          </picture>
+          <h2 class="calculator-tittle">Triángulos</h2>
+          <div class="calculator-inputs">
+            <label for="triangle-side-a">
+              <p>Ingrese el valor del <span class="bold">Lado A</span>  en cm:</p>        
+              <input type="number" placeholder="Ingrese un número" id="triangle-side-a">
+            </label>
+            <label for="triangle-side-b">
+              <p>Ingrese el valor del <span class="bold">Lado B</span> en cm:</p>        
+              <input type="number" placeholder="Ingrese un número" id="triangle-side-b">
+            </label>
+            <label for="triangle-base">
+              <p>Ingrese el valor de <span class="bold">Base</span> en cm:</p>        
+              <input type="number" placeholder="Ingrese un número" id="triangle-base">
+            </label>
+            <label for="triangle-height">
+              <p>Ingrese el valor de <span class="bold">Altura</span> en cm:</p>        
+              <input type="number" placeholder="Ingrese un número" id="triangle-height">
+            </label>
+            <button>Calcular el perimetro</button>
+            <button>Calcular el área</button>
+          </div>
+        </section>
+        <section class="figures-section">
+          <div class="square-operations">
+            <picture class="figure-section__image-container">
+              <img src="../img/Lado.png" alt="Imagen de un cuadrado y sus partes" class="figure-section__image">
+            </picture>
+            <h2 class="calculator-tittle">Cuadrados</h2>
+            <div class="calculator-inputs">
+              <label for="square-side">
+                <p>Ingrese el valor del <span class="bold">Lado</span> en cm:</p>          
+                <input type="number" placeholder="Ingrese un número" id="square-side">
+              </label>
+              <button>Calcular el perimetro</button>
+              <button>Calcular el área</button>
+            </div>
+          </div>
+          <div class="rectangle-operations">
+            <picture class="figure-section__image-container">
+              <img src="../img/square.png" alt="Imagen de un cuadrado y sus partes" class="figure-section__image">
+            </picture>
+            <h2 class="calculator-tittle">Rectángulos</h2>
+            <div class="calculator-inputs">
+              <label for="rectangle-height">
+                <p>Ingrese el valor del <span class="bold">Ancho</span> en cm:</p>          
+                <input type="number" placeholder="Ingrese un número" id="rectangle-height">
+              </label>
+              <label for="rectangle-width">
+                <p>Ingrese el valor del <span class="bold">Largo</span> en cm:</p>          
+                <input type="number" placeholder="Ingrese un número" id="rectangle-width">
+              </label>
+              <button>Calcular el perimetro</button>
+              <button>Calcular el área</button>
+            </div>
+          </div>
+        </section>
+        <section class="figures-section">
+          <picture class="figure-section__image-container">
+            <img src="../img/circulo-formula-perimetro-radio.png" alt="Imagen de un círculo y sus partes" class="figure-section__image">
+          </picture>
+          <h2 class="calculator-tittle">Circulos</h2>
+          <div class="calculator-inputs">
+            <label for="cicle-r">
+              <p>Ingrese el valor del <span class="bold">Radio</span>:</p>        
+              <input type="number" placeholder="Ingrese un número" id="cicle-r">
+            </label>
+            <button>Calcular el perimetro</button>
+            <button>Calcular el área</button>
+            <button>Calcular Diámetro</button>
+          </div>
+        </section>
       </div>
-    </section>
-    <section class="figures-section">
-      <div class="square-operations">
-        <picture class="figure-section__image-container">
-          <img src="../img/Lado.png" alt="Imagen de un cuadrado y sus partes" class="figure-section__image">
-        </picture>
-        <h2 class="calculator-tittle">Cuadrados</h2>
-        <div class="calculator-inputs">
-          <label for="square-side">
-            <p>Ingrese el valor del <span class="bold">Lado</span> en cm:</p>          
-            <input type="number" placeholder="Ingrese un número" id="square-side">
-          </label>
-          <button>Calcular el perimetro</button>
-          <button>Calcular el área</button>
-        </div>
-      </div>
-      <div class="square-operations">
-        <picture class="figure-section__image-container">
-          <img src="../img/square.png" alt="Imagen de un cuadrado y sus partes" class="figure-section__image">
-        </picture>
-        <h2 class="calculator-tittle">Rectángulos</h2>
-        <div class="calculator-inputs">
-          <label for="rectangle-height">
-            <p>Ingrese el valor del <span class="bold">Ancho</span> en cm:</p>          
-            <input type="number" placeholder="Ingrese un número" id="rectangle-height">
-          </label>
-          <label for="rectangle-width">
-            <p>Ingrese el valor del <span class="bold">Largo</span> en cm:</p>          
-            <input type="number" placeholder="Ingrese un número" id="rectangle-width">
-          </label>
-          <button>Calcular el perimetro</button>
-          <button>Calcular el área</button>
-        </div>
-      </div>
-    </section>
-    <section class="figures-section">
-      <picture class="figure-section__image-container">
-        <img src="../img/circulo-formula-perimetro-radio.png" alt="Imagen de un círculo y sus partes" class="figure-section__image">
-      </picture>
-      <h2 class="calculator-tittle">Circulos</h2>
-      <div class="calculator-inputs">
-        <label for="cicle-r">
-          <p>Ingrese el valor del <span class="bold">Radio</span>:</p>        
-          <input type="number" placeholder="Ingrese un número" id="cicle-r">
-        </label>
-        <button>Calcular el perimetro</button>
-        <button>Calcular el área</button>
-        <button>Calcular Diámetro</button>
-      </div>
-    </section>
-  </main>
+    </main>
+  </div>
   <section class="main-container-services">
     <nav class="services-nav">
       <a href="./discounts.html">

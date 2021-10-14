@@ -1,0 +1,80 @@
+/* General Header */
+.container{
+  display: flex;
+}
+header{
+  position: fixed;
+  left: 0;
+  width: 10rem;
+  height: 100vh;
+  flex-direction: column-reverse;
+  -webkit-box-shadow: 1px 0px 3px 1px rgba(0,0,0,0.75);
+  -moz-box-shadow: 1px 0px 3px 1px rgba(0,0,0,0.75);
+  box-shadow: 1px 0px 3px 1px rgba(0,0,0,0.75);
+}
+header .my-profile{
+  transform: rotate(-90deg);
+}
+
+/* Media for services*/
+.main-container-services{
+  width: calc(100% - 10rem);
+  position: fixed;
+  bottom: 0;
+  left: 10rem;
+}
+.main-container-services .services-nav{
+  display: flex;
+}
+.services-nav a{
+  flex-grow: 1;
+}
+.services-nav__item{
+  border-width: .7rem .7rem 0 0;
+}
+.services-nav__item p{
+  display: none;
+}
+/* General button hover*/
+button{
+  transition: .3s;
+}
+button:hover{
+  cursor: pointer;
+  -webkit-box-shadow: 1px 0px 3px 1px rgba(0,0,0,0.75);
+  -moz-box-shadow: 1px 0px 3px 1px rgba(0,0,0,0.75);
+  box-shadow: 1px 0px 3px 1px rgba(0,0,0,0.75);
+}
+
+/* General Return home*/
+.return-home__button{
+  display: inline;
+  width: 6.5rem;
+  height: 10rem;
+  position: fixed;
+  top: 0;
+  right: 3rem;
+  background-color: var(--main-black);
+  color: var(--main-blue);
+  text-align: center;
+  -webkit-box-shadow: 1px 0px 3px 1px rgba(0,0,0,0.75);
+  -moz-box-shadow: 1px 0px 3px 1px rgba(0,0,0,0.75);
+  box-shadow: 1px 0px 3px 1px rgba(0,0,0,0.75);
+  transition: .3s;
+}
+.return-home__button span{
+  display: block;
+  position: absolute;
+  top: 4.2rem;
+  right: 0;
+  left: 0;
+  font-size: 3rem;
+  font-weight: bold;
+  transform: rotate(-90deg);
+  text-transform: uppercase;
+}
+.return-home__button:hover{
+  background-color: var(--main-blue);
+  color: var(--main-black);
+  transform: scale(1.05);
+}

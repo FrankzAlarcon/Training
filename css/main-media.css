@@ -3,6 +3,7 @@ body{
   height: 100vh;
   width: 100%;
 }
+/* Fixe header at the left*/
 .container{
   display: flex;
 }
@@ -10,17 +11,19 @@ header{
   width: 10rem;
   height: 100vh;
   flex-direction: column-reverse;
+  -webkit-box-shadow: 1px 0px 3px 1px rgba(0,0,0,0.75);
+  -moz-box-shadow: 1px 0px 3px 1px rgba(0,0,0,0.75);
+  box-shadow: 1px 0px 3px 1px rgba(0,0,0,0.75);
 }
 header .my-profile{
   transform: rotate(-90deg);
 }
+
+/* Flex in the main document*/
 .main-container{
   display: flex;
 }
-footer{
-  position: absolute;
-  bottom: 0;
-}
+
 .main-container .main-container__tittle{
   font-size: 4rem;
 }
@@ -43,4 +46,10 @@ footer{
 }
 .services-nav__item{
   height: calc(25vh - 1.5rem);
+}
+
+/* Footer at the end*/
+footer{
+  position: absolute;
+  bottom: 0;
 }
