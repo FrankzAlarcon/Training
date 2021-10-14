@@ -1,0 +1,46 @@
+body{
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+}
+.container{
+  display: flex;
+}
+header{
+  width: 10rem;
+  height: 100vh;
+  flex-direction: column-reverse;
+}
+header .my-profile{
+  transform: rotate(-90deg);
+}
+.main-container{
+  display: flex;
+}
+footer{
+  position: absolute;
+  bottom: 0;
+}
+.main-container .main-container__tittle{
+  font-size: 4rem;
+}
+.main-container__themes{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main-container-services .sevices--tittle{
+  display: none;
+}
+.main-container-services .service-help{
+  display: none;
+}
+.main-container-services{
+  height: 100%;
+}
+.services-nav{
+  height: 100%;
+}
+.services-nav__item{
+  height: calc(25vh - 1.5rem);
+}

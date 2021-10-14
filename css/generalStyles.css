@@ -1,0 +1,109 @@
+:root{
+  /* Colors */
+  --main-blue: #0da6f3;
+  --main-black: #1a1b15;
+  --button-color: #ffd4d4;
+  --yellow: #F6DF1C;
+  --white: aliceblue;
+  /* Fonts */
+  --main-font: 'Roboto', sans-serif;
+  --p-font: 'Krub', sans-serif;
+  --seconday-font: 'Poppins', sans-serif;
+
+  /* Breakpoints */
+  --laptop: 1024px;
+}
+
+html{
+  font-size: 62.5%; /* 1rem = 10px */
+  box-sizing: border-box;
+}
+*,*::after,*::before{
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+body{
+  font-family: var(--main-font);
+  font-size: 1.6rem;
+}
+
+a{
+  text-decoration: none;
+  color: var(--main-black);
+}
+p{
+  font-family: var(--p-font);
+}
+h1{
+  margin: 0;
+}
+/* Miscelania*/
+.underlined{
+  background-image: linear-gradient(var(--yellow), var(--yellow));
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  transition: background-size .3s;
+}
+
+.underlined:hover,.underlined:focus{
+  background-size: 100% 2px;
+}
+.color{
+  background-image: linear-gradient(var(--white), var(--white));
+}
+
+.bold{
+  font-weight: bold;
+}
+/* General Header*/
+header{
+  width: 100%;
+  height: 10rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--main-black);
+}
+header .header-img{
+  width: 8rem;
+}
+header .my-profile{
+  font-size: 2.4rem;
+  color: var(--yellow);
+  font-weight: bold;
+  font-family: var(--p-font);
+}
+/* General Services*/
+.main-container-services{
+  width: 100%;
+}
+.services-nav__item{
+  width: 100%;
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  background-color: var(--main-blue);
+  border-width: .7rem .7rem 0;
+  border-style: solid;
+  border-color: var(--main-black);
+  padding: 1rem;
+  transition: .3s;
+}
+.services-nav__item img{
+  width: 10rem;
+}
+.services-nav__item .img-change-color{
+  filter: brightness(100%);
+  filter: saturate(100%);
+  filter: invert(100%);
+}
+.change-color{
+  background-color: var(--main-black);
+  color: var(--white);
+}
+.services-nav__item:hover{
+  border-width: 2px;
+  background-color: var(--main-blue);
+}

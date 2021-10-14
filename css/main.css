@@ -1,0 +1,51 @@
+/* Header */
+
+
+/* Hero main*/
+.main-container{
+  width: 100%;
+}
+.main-container .main-container__tittle{
+  text-align: center;
+  margin: 4rem 0;
+  font-size: 3.6rem;
+}
+.main-container__themes{
+  width: 100%;
+  padding: 3rem;
+}
+.main-container__themes .themes__tittle{
+  font-weight: bold;
+  font-size: 2rem;
+}
+.main-container__themes .themes__list{
+  padding: 1rem 0 0 2.5rem;
+  line-height: 2.5rem;
+  font-size: 1.6rem;
+}
+.themes__list-item{
+  font-family: var(--p-font);
+}
+/* Services */
+.main-container-services .sevices--tittle{
+  padding-left: 3rem;
+  margin-bottom: .5rem;
+}
+.main-container-services .service-help{
+  padding-left: 3.2rem;
+  padding-bottom: 2.5rem;
+}
+
+/* Footer */
+footer{
+  width: 100%;
+  border-top: 2px solid var(--yellow);
+  background-color: var(--main-black);
+  height: 6rem;
+  text-align: center;
+  color: var(--white);
+  padding-top: 2rem;
+}
+footer a{
+  color: var(--white);
+}
