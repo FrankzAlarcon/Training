@@ -1,0 +1,13 @@
+.stadistic-main-container{
+  margin: 0 auto;
+  margin-bottom: 15rem;
+}
+.stadistic-sections{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  gap: 5rem;
+}
+.list-values h2{
+  text-align: center;
+}

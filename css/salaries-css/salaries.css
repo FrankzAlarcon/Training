@@ -1,0 +1,54 @@
+.salaries-main-container{
+  padding: 2rem;
+}
+.salaries-main-container h1{
+  text-align: center;
+  font-size: 4.5rem;
+  font-weight: bold;
+  margin: 2rem 0;
+}
+.salaries-main-container img{
+  display: block;
+  width: 15rem;
+  margin: 0 auto;
+}
+.analysis{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+.analysis select{
+  width: 18rem;
+  height: 3rem;
+  border: 2px solid var(--main-black);
+  border-radius: .2rem;
+  margin-left: 1rem;
+}
+.add-list .check-box-list{
+  display: block;
+  margin-bottom: 1.5rem;
+  padding-left: 1rem;
+}
+.add-list .check-box-list span {
+  color: var(--button-color);
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.add-list label p{
+  margin-bottom: 1rem;
+}
+.add-list label input{
+  margin-bottom: 1rem;
+}
+.button-add--first{
+  margin-bottom: 3rem;
+}
+.add-list button:last-child{
+  margin-bottom: 3rem;
+}
+.list-values-precharged ol{
+  padding-left: 3rem;
+}
+.list-values-precharged li{
+  line-height: 2.3rem;
+}

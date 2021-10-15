@@ -1,0 +1,51 @@
+.stadistic-main-container{
+  padding: 1.5rem;
+}
+.stadistic-main-container h1{
+  font-size: 4.5rem;
+  text-align: center;
+  margin-top: 2rem;
+}
+.stadistic-main-container img{
+  width: 15rem;
+  display: block;
+  margin: 2rem auto;
+}
+.stadistic-sections .section-header{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+.stadistic-sections .section-header h2{
+  font-size: 3.5rem;
+  font-weight: bold;
+}
+.dates-2-calc{
+  margin-bottom: 5rem;
+}
+.dates-2-calc label{
+  display: block;
+  margin-bottom: 1.5rem;
+}
+.dates-2-calc p{
+  margin-bottom: 1rem;
+}
+.input-button--eliminate{
+  background-color: var(--button-secondary-color);
+}
+.list-values h2{
+  font-size: 3.5rem;
+}
+#section-select{
+  width: 15rem;
+  height: 4rem;
+  /* margin-left: 4rem; */
+  border: 2px solid black;
+  border-radius: 2px;
+}
+.calculator-inputs{
+  flex: 1;
+}
+.list-values{
+  flex: 1;
+}

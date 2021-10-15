@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Krub:wght@400;700&family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="../css/normalize.css">
   <link rel="stylesheet" href="../css/general-css/generalStyles.css">
   <link rel="stylesheet" href="../css/general-css/generalStyles-media.css" media="(min-width: 1024px">
   <link rel="stylesheet" href="../css/salaries-css/salaries.css">
@@ -22,6 +22,65 @@
       <a href="https://github.com/FrankzAlarcon" class="my-profile underlined">@FrankzAlarcon</a>
     </header>
     <!-- Continuar aquí -->
+    <main class="salaries-main-container">
+      <h1>Análisis Salarial</h1>
+      <img src="../img/dollar.png" alt="Imagen de un moneda">
+      <section class="inputs-section-container">
+        <section class="inputs-section">
+          <label class="analysis">
+            <h2>Cálculos</h2>
+            <select name="" id="">
+              <option value="">Mediana Salarial</option>
+              <option value="">Mediana Salarial TOP 10%</option>
+            </select>
+          </label>
+          <section class="add-list">
+            <label class="check-box-list">
+              <input type="checkbox" name="" id=""><span> Utilizar lista precargada para realizar los cálculos</span>
+            </label>
+            <label for="">
+              <p>Ingresa un <span class="bold">Nuevo Valor</span> a la lista</p>
+              <input type="number" name="" id="" placeholder="Ingrese un número">
+            </label>
+            <button class="button-add--first">Agregar a la lista</button>
+            <label for="">
+              <p>Escribe la <span class="bold">Posición</span> del valor a eliminar en la lista</p>
+              <input type="number" name="" id="" placeholder="Ingrese un número">        
+            </label>
+            <button class="button--delete">Quitar de la lista</button>
+            <button>Calcular</button>
+          </section>
+        </section>
+        <section class="list-values-added">
+          <h2>Lista de valores cargados</h2>
+        </section>
+        <section class="list-values-precharged">
+          <h2>Lista de valores precargados</h2>
+          <ol>
+            <li>Camila, <span class="bold">$500</span></li>
+            <li>Carlos, <span class="bold">$1800</span></li>
+            <li>Juan, <span class="bold">$3000</span></li>
+            <li>Patricio, <span class="bold">$1200</span></li>
+            <li>Frankz, <span class="bold">$4000</span></li>
+            <li>Jhon, <span class="bold">$2000</span></li>
+            <li>Fanny, <span class="bold">$1400</span></li>
+            <li>Jorge, <span class="bold">$1400</span></li>
+            <li>Mauricio, <span class="bold">$1900</span></li>
+            <li>Junior, <span class="bold">$1200</span></li>
+            <li>Daniela, <span class="bold">$2200</span></li>
+            <li>Julio, <span class="bold">$900</span></li>
+            <li>Pablo, <span class="bold">$400</span></li>
+            <li>Diana, <span class="bold">$700</span></li>
+            <li>Domenica, <span class="bold">$2500</span></li>
+            <li>Andrea, <span class="bold">$1800</span></li>
+            <li>Silvana, <span class="bold">$400</span></li>
+            <li>Evelyn, <span class="bold">$1500</span></li>
+            <li>Geovanna, <span class="bold">$2300</span></li>
+            <li>Oswaldo, <span class="bold">$2300</span></li>
+          </ol>
+        </section>
+      </section>
+    </main>
   </div>
   <section class="main-container-services">
     <nav class="services-nav">
