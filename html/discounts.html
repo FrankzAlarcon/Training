@@ -8,11 +8,11 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Krub:wght@400;700&family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="../css/normalize.css">
   <link rel="stylesheet" href="../css/general-css/generalStyles.css">
   <link rel="stylesheet" href="../css/general-css/generalStyles-media.css" media="(min-width: 1024px)">
   <link rel="stylesheet" href="../css/discounts-css/discounts.css">
-  <link rel="stylesheet" href="../css/discounts-css/discounts-media.css" media="(min-width: 1024px)">
+  <link rel="stylesheet" href="../css/discounts-css/discounts-media.css" media="(min-width: 900px)">
 </head>
 <body>
   <div class="container">
@@ -21,7 +21,34 @@
       <a href="../index.html"><img src="../img/js-challenge-logo.png" alt="Imagen de logo de JavaScript" class="header-img"></a>
       <a href="https://github.com/FrankzAlarcon" class="my-profile underlined">@FrankzAlarcon</a>
     </header>
-
+    <main class="main-discounts-container">
+      <h1 class="main-discounts__tittle">Porcentajes y Descuentos en precios</h1>
+      <img class="discount-section__image" src="../img/discount.png" alt="Imagen de un descuento en precios">
+      <section class="discount-sections">
+        <section class="section-coupons-available">
+          <h2>Lista de Cupones disponibles</h2>
+          <p>Promo-10%</p>
+          <p>Promo-15%</p>
+          <p>Promo-20%</p>
+        </section>
+        <section class="section-calculator-inputs">
+          <h2>Cálculos de Descuentos</h2>
+          <label for="input-price">
+            <p>Escribe el <span class="bold">Precio total</span> del o los productos:</p>
+            <input type="number" name="" id="input-price">
+          </label>
+          <label for="input-discount">
+            <p>Escribe el <span class="bold">Descuento</span> que se aplica a tu compra</p>
+            <input type="number" name="" id="input-discount">
+          </label>
+          <label for="input-coupon">
+            <p>Escribe el nombre del <span class="bold">Cupón</span> (si tienes) </p>
+            <input type="number" name="" id="input-coupon">
+          </label>
+          <button>Calcular el precio a pagar</button>
+        </section>
+      </section>
+    </main>
   </div>
   <section class="main-container-services">
     <nav class="services-nav">

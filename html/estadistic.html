@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Krub:wght@400;700&family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="../css/normalize.css">
   <link rel="stylesheet" href="../css/general-css/generalStyles.css">
   <link rel="stylesheet" href="../css/general-css/generalStyles-media.css" media="(min-width: 1024px">
   <link rel="stylesheet" href="../css/stadistic-css/stadistic.css">
@@ -22,6 +22,44 @@
       <a href="https://github.com/FrankzAlarcon" class="my-profile underlined">@FrankzAlarcon</a>
     </header>
     <!-- Continuar aquí -->
+    <main>
+      <h1>Media, Moda y Mediana</h1>
+      <img src="../img/visualizacion-de-datos.png" alt="Imagen de graficos estadísticos">
+      <section>
+        <section class="section-header">
+          <h2>Cálculos</h2>
+          <select name="" id="section-select">
+            <option value="Media Aritmética">Media Aritmética</option>
+            <option value="Media Armonica">Media Armónica</option>
+            <option value="Media Geométrica">Media Geométrica</option>
+            <option value="Mediana">Mediana</option>
+            <option value="Moda">Moda</option>
+          </select>
+        </section>
+        <section class="calculator-inputs">
+          <section class="dates-2-calc">
+            <div class="add-values">
+              <label for="input-add-values">
+                <p>Añadir un <span class="bold">Nuevo valor</span> a la lista de datos</p>
+                <input type="number" name="" id="input-add-values">
+              </label>
+              <button>Agregar a la lista</button>
+            </div>
+            <div class="eliminate-values">
+              <label for="input-eliminate">
+                <p>Ingresa la <span class="bold">Posición</span> del valor en la lista: </p>
+                <input type="number" name="" id="input-eliminate">
+              </label>
+              <button>Quitar de la lista</button>
+            </div>
+            <button>Calcular</button>
+          </section>
+          <section class="list-values">
+            <h2>Lista de Valores Cargados</h2>
+          </section>
+        </section>
+      </section>
+    </main>
   </div>
   <section class="main-container-services">
     <nav class="services-nav">

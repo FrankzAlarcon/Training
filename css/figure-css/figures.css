@@ -48,4 +48,5 @@
   background-color: var(--button-color);
   margin-bottom: 1rem;
   border: 2px solid black;
+  text-transform: uppercase;
 }

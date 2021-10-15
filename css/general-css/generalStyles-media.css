@@ -35,16 +35,7 @@ header .my-profile{
 .services-nav__item p{
   display: none;
 }
-/* General button hover*/
-button{
-  transition: .3s;
-}
-button:hover{
-  cursor: pointer;
-  -webkit-box-shadow: 1px 0px 3px 1px rgba(0,0,0,0.75);
-  -moz-box-shadow: 1px 0px 3px 1px rgba(0,0,0,0.75);
-  box-shadow: 1px 0px 3px 1px rgba(0,0,0,0.75);
-}
+
 
 /* General Return home*/
 .return-home__button{

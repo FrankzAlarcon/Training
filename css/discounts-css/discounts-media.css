@@ -1,0 +1,8 @@
+.main-discounts-container{
+  margin: 0 auto;
+}
+.discount-sections{
+  display: flex;
+  gap: 5rem;
+  justify-content: center;
+}
