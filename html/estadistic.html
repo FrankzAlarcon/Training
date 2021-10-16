@@ -27,6 +27,7 @@
   </head>
   <body>
     <div class="container">
+    <div class="result-operations"></div>
       <a href="../index.html" class="return-home__button"><span>Home</span></a>
       <header>
         <a href="../index.html"
@@ -67,7 +68,8 @@
                   </p>
                   <input type="number" name="" id="input-add-values" placeholder="Ingrese un número" step="any"/>
                 </label>
-                <button>Agregar a la lista</button>
+                <div class="error-add-list"></div>
+                <button class="button-add-list">Agregar a la lista</button>
               </div>
               <div class="eliminate-values">
                 <label for="input-eliminate">
@@ -77,15 +79,20 @@
                   </p>
                   <input type="number" name="" id="input-eliminate" placeholder="Ingrese un número" step="any"/>
                 </label>
+                <div class="error-eliminate-list"></div>
                 <button class="input-button--eliminate">
                   Quitar de la lista
                 </button>
               </div>
-              <button>Calcular</button>
+              <div class="error-calculate"></div>
+              <button class="button-calculate">Calcular</button>
             </section>
           </section>
           <section class="list-values">
             <h2>Lista de Valores Cargados</h2>
+            <ol>
+              
+            </ol>
           </section>
         </section>
       </main>
@@ -127,5 +134,6 @@
         </a>
       </nav>
     </section>
+    <script src="../js/stadistic.js" type="module"></script>
   </body>
 </html>
