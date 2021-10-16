@@ -3,7 +3,7 @@ function errorMessage(message,container){
   /**If already exist an errorMessage */
   const previousMessageError = document.querySelector('.error');
   if(previousMessageError){
-    return;
+    previousMessageError.remove();
   }
 
   /**Create the container for the message */
