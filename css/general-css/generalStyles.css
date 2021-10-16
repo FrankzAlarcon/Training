@@ -160,6 +160,7 @@ button:hover{
   padding: .5rem 1rem;
   text-align: center;
   color: var(--white);
+  margin-bottom: 1rem;
 }
 
 /* Show result styles*/

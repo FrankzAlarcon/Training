@@ -77,7 +77,7 @@ function showResult(dirImage, result){
   
 }
 function resetInputs(){
-  const allInputs = document.querySelectorAll('input[type=number]');
+  const allInputs = document.querySelectorAll('input[type=number],input[type=text]');
   allInputs.forEach((input)=>{
     input.value='';
   });

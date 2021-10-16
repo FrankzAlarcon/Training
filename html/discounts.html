@@ -16,6 +16,7 @@
 </head>
 <body>
   <div class="container">
+    <div class="result-operations"></div>
     <a href="../index.html" class="return-home__button"><span>Home</span></a>
     <header>
       <a href="../index.html"><img src="../img/js-challenge-logo.png" alt="Imagen de logo de JavaScript" class="header-img"></a>
@@ -31,21 +32,22 @@
           <p>Promo-15%</p>
           <p>Promo-20%</p>
         </section>
-        <section class="section-calculator-inputs">
+        <section class="section-calculator-inputs">          
           <h2>Cálculos de Descuentos</h2>
           <label for="input-price">
             <p>Escribe el <span class="bold">Precio total</span> del o los productos:</p>
             <input type="number" name="" id="input-price" placeholder="Ingrese un número" step="any">
           </label>
           <label for="input-discount">
-            <p>Escribe el <span class="bold">Descuento</span> que se aplica a tu compra</p>
+            <p>Escribe el <span class="bold">Descuento</span> que se aplica a tu compra (0%-50%)</p>
             <input type="number" name="" id="input-discount" placeholder="Ingrese un número" step="any">
           </label>
           <label for="input-coupon">
             <p>Escribe el nombre del <span class="bold">Cupón</span> (si tienes) </p>
-            <input type="number" name="" id="input-coupon" placeholder="Ingrese el nombre del cupón" step="any">
+            <input type="text" name="" id="input-coupon" placeholder="Ingrese el nombre del cupón" step="any">
           </label>
-          <button>Calcular el precio a pagar</button>
+          <div class="alert-discount"></div>
+          <button class="button-calculate-discount">Calcular el precio a pagar</button>
         </section>
       </section>
     </main>
@@ -81,5 +83,6 @@
       </a>
     </nav>
   </section>
+  <script src="../js/discounts.js" type="module"></script>
 </body>
 </html>
