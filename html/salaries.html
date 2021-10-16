@@ -16,6 +16,7 @@
 </head>
 <body>
   <div class="container">
+    <div class="result-operations"></div>
     <a href="../index.html" class="return-home__button"><span>Home</span></a>
     <header>
       <a href="../index.html"><img src="../img/js-challenge-logo.png" alt="Imagen de logo de JavaScript" class="header-img"></a>
@@ -29,30 +30,34 @@
         <section class="inputs-section">
           <label class="analysis">
             <h2>Cálculos</h2>
-            <select name="" id="">
-              <option value="">Mediana Salarial</option>
-              <option value="">Mediana Salarial TOP 10%</option>
+            <select name="" id="select-calculates">
+              <option value="Mediana Salarial">Mediana Salarial</option>
+              <option value="Media Salarial TOP 10%">Media Salarial TOP 10%</option>
             </select>
           </label>
           <section class="add-list">
             <label class="check-box-list">
-              <input type="checkbox" name="" id=""><span> Utilizar lista precargada para realizar los cálculos</span>
+              <input type="checkbox" name="" id="check-box"><span> Utilizar lista precargada para realizar los cálculos</span>
             </label>
             <label for="">
-              <p>Ingresa un <span class="bold">Nuevo Valor</span> a la lista</p>
-              <input type="number" name="" id="" placeholder="Ingrese un número" step="any">
+              <p>Ingresa un <span class="bold">Nuevo Salario</span> a la lista</p>
+              <input type="number" name="" id="input-add-value" placeholder="Ingrese un número" step="any">
             </label>
+            <div class="error-add-value"></div>
             <button class="button-add--first">Agregar a la lista</button>
             <label for="">
               <p>Escribe la <span class="bold">Posición</span> del valor a eliminar en la lista</p>
-              <input type="number" name="" id="" placeholder="Ingrese un número" step="any">        
+              <input type="number" name="" id="input-delete-position" placeholder="Ingrese un número" step="any">        
             </label>
+            <div class="error-delete-value"></div>
             <button class="button--delete">Quitar de la lista</button>
-            <button>Calcular</button>
+            <div class="error-calculate-value"></div>
+            <button class="button-calculate">Calcular</button>
           </section>
         </section>
         <section class="list-values-added">
           <h2>Lista de valores cargados</h2>
+          <ol></ol>
         </section>
         <section class="list-values-precharged">
           <h2>Lista de valores precargados</h2>
@@ -113,5 +118,6 @@
       </a>
     </nav>
   </section>
+  <script src="../js/salaries.js" type="module"></script>
 </body>
 </html>

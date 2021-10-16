@@ -52,6 +52,10 @@ function addValue(){
     errorMessage('Ingrese un valor válido', errorContainer);
     return;
   }
+  if(newValue<0){
+    errorMessage('Ingrese un valor mayor a 0', errorContainer);
+    return;
+  }
   /**Add value to the list */
   valuesList.push(newValue);
 
