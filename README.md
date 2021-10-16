@@ -1,7 +1,7 @@
 # Training
 A Project to train HTML, CSS and JavaScript
 
-Visit the page here: [click me](http://https://frankzalarcon.github.io/Training/index.html "click me")
+Visit the page here: [click me](https://frankzalarcon.github.io/Training/index.html "click me")
 ## Knowledge applied in the project
 - DOM manipulation
 - Funtions
